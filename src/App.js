@@ -7,6 +7,7 @@ import { ButtonContainer } from './historybuttons/HistoryButElements';
 import { nanoid } from "nanoid";
 import RemainingTasks from "./components/RemainingTasks/RemainingTasks";
 import { FormH2, FormLabel } from "./components/Form/FormElements";
+import Fade from 'react-reveal/Fade';
 
 // We are defining these constants outside our App() function because if they were defined inside it, they would be recalculated every time the <App /> component re-renders, and we don't want that. This information will never change no matter what our application does.
 const FILTER_MAP = {
@@ -88,7 +89,8 @@ function App(props) {
 
 
   return (
-    <>
+
+    <Fade>
       <PageContainer>
         <Container>
           <Form addTask={addTask} />
@@ -108,7 +110,8 @@ function App(props) {
           </UnorderedList>
         </Container>
       </PageContainer>
-    </>
+      </Fade>
+  
   );
 }
 
