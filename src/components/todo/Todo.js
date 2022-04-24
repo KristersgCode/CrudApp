@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ButtonDelete, ButtonEdit } from '../../ButtonElements'
-import { FormButton, FormColumnContainer, FormContainer, FormInput, FormLabel } from "../Form/FormElements";
+import { FormButton, FormColumnContainer, FormContainer, FormH2, FormInput, FormLabel } from "../Form/FormElements";
 import { CheckBoxContainer, InputTodo, Label, ListTodo, ButtonContainer } from './TodoElements'
 
 const Todo = (props) => {
@@ -51,6 +51,7 @@ const Todo = (props) => {
     );
 
     const viewTemplate = (
+        
         <ListTodo>
             <CheckBoxContainer>
                 <InputTodo
