@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-export const ListTodo = styled.li`
-`
 
 export const CheckBoxContainer = styled.div`
 white-space: nowrap;
